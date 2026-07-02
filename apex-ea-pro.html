@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== PRIMARY SEO ===== -->
+    <title>Apex EA Pro — Verified MT4/MT5 Forex Expert Advisor | Prop Firm Ready EA</title>
+    <meta name="description" content="Apex EA Pro is a verified forex expert advisor for MT4 & MT5. Live Myfxbook-tracked results since 2021, full monthly returns disclosed (including losing months), no martingale, no grid. Prop firm compatible. 30-day money-back guarantee.">
+    <meta name="keywords" content="forex EA, expert advisor, MT4 EA, MT5 EA, automated forex trading, forex robot, prop firm EA, FTMO EA, XAUUSD EA, gold trading robot, verified forex EA, myfxbook verified EA, low drawdown EA">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="Apex Quant Systems Ltd.">
+    <link rel="canonical" href="https://www.apexeapro.com/">
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.apexeapro.com/">
+    <meta property="og:title" content="Apex EA Pro — Verified Forex Expert Advisor for MT4 & MT5">
+    <meta property="og:description" content="Live-verified since 2021. Every month published — wins and losses. No martingale, no grid, no hidden risk. Prop firm ready. 30-day refund guarantee.">
+    <meta property="og:image" content="https://www.apexeapro.com/og-cover.jpg">
+    <meta property="og:site_name" content="Apex EA Pro">
+
+    <!-- ===== TWITTER ===== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Apex EA Pro — Verified MT4/MT5 Forex Expert Advisor">
+    <meta name="twitter:description" content="Full monthly returns disclosed since 2021 — including losing months. That's how you know the winning ones are real.">
+    <meta name="twitter:image" content="https://www.apexeapro.com/og-cover.jpg">
+
+    <!-- ===== STRUCTURED DATA: SOFTWARE PRODUCT ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Apex EA Pro",
+      "operatingSystem": "MetaTrader 4, MetaTrader 5",
+      "applicationCategory": "FinanceApplication",
+      "description": "Automated forex trading expert advisor (EA) for MT4 and MT5 with live-verified performance, fixed fractional risk management, and full monthly returns disclosure.",
+      "offers": [
+        { "@type": "Offer", "name": "Single License", "price": "349", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+        { "@type": "Offer", "name": "Pro License", "price": "549", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+        { "@type": "Offer", "name": "Fund License", "price": "1190", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
+      ],
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "ratingCount": "312", "bestRating": "5" }
+    }
+    </script>
+
+    <!-- ===== STRUCTURED DATA: ORGANIZATION ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Apex Quant Systems Ltd.",
+      "url": "https://www.apexeapro.com",
+      "logo": "https://www.apexeapro.com/logo.png",
+      "contactPoint": { "@type": "ContactPoint", "email": "support@apexeapro.com", "contactType": "customer support", "availableLanguage": ["English"] }
+    }
+    </script>
+
+    <!-- ===== STRUCTURED DATA: FAQ ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Does Apex EA Pro use martingale or grid strategies?", "acceptedAnswer": { "@type": "Answer", "text": "No. Apex EA Pro never averages into losing positions, never doubles lot sizes after a loss, and never opens grids. Every trade has a fixed fractional risk (default 0.5% of equity) and a hard stop loss placed at order entry." } },
+        { "@type": "Question", "name": "Can I verify the results before buying?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. A live real-money account has been tracked on Myfxbook since March 2021 with trading privileges and track record verified. The link is public and updates automatically. We also publish every monthly return on this page, including losing months." } },
+        { "@type": "Question", "name": "Is Apex EA Pro compatible with prop firm challenges like FTMO?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The EA's default risk profile keeps daily drawdown well under typical 5% prop firm limits, holds no trades over the weekend in Prop Mode, and does not use prohibited techniques such as martingale, grid, or latency arbitrage. Always confirm your specific firm's current rules." } },
+        { "@type": "Question", "name": "What is the refund policy?", "acceptedAnswer": { "@type": "Answer", "text": "30-day unconditional money-back guarantee. If the EA does not run as documented on your broker, or you simply change your mind within 30 days of purchase, email support with your order ID for a full refund." } },
+        { "@type": "Question", "name": "What returns should I realistically expect?", "acceptedAnswer": { "@type": "Answer", "text": "The live account has averaged 2.8% per month since 2021 with a maximum drawdown of 9.8%. Some months are negative. Anyone promising fixed or guaranteed monthly returns in forex is misleading you — past performance does not guarantee future results." } },
+        { "@type": "Question", "name": "Which brokers and pairs does it work with?", "acceptedAnswer": { "@type": "Answer", "text": "Any MT4/MT5 broker with raw or low spreads. Optimized sets are provided for EURUSD, GBPUSD, USDJPY and XAUUSD (gold). ECN accounts with spreads under 1 pip on majors are recommended." } }
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --ink: #0A1B2E;            /* deep audit navy */
+            --ink-soft: #24384E;
+            --paper: #F7F9FB;          /* page background */
+            --card: #FFFFFF;
+            --line: #D9E1EA;
+            --text: #1C2B3A;
+            --text-2: #51637A;
+            --text-3: #7E8FA3;
+            --verify: #0E7C4A;         /* verified green */
+            --verify-bg: #E9F5EF;
+            --loss: #B3362C;
+            --loss-bg: #FBEDEB;
+            --risk-amber: #8A5A0B;
+            --risk-bg: #FBF3E3;
+            --navy-cta: #10406E;
+            --focus: #1D6FD1;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal { transition: none !important; opacity: 1 !important; transform: none !important; } }
+        body {
+            font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+            background: var(--paper); color: var(--text);
+            line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden;
+        }
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 22px; }
+        h1, h2, h3 { font-family: 'Sora', sans-serif; color: var(--ink); letter-spacing: -0.5px; line-height: 1.15; }
+        h2 { font-size: clamp(28px, 3.6vw, 40px); font-weight: 700; margin-bottom: 14px; }
+        h3 { font-size: 19px; font-weight: 600; }
+        .lede { font-size: 17px; color: var(--text-2); max-width: 640px; margin-bottom: 46px; }
+        .mono { font-family: 'IBM Plex Mono', monospace; }
+        .eyebrow { display: inline-flex; align-items: center; gap: 8px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--navy-cta); margin-bottom: 16px; }
+        .eyebrow::before { content: ''; width: 22px; height: 2px; background: var(--navy-cta); }
+        section { padding: 88px 0; }
+        a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+
+        /* ===== VERIFIED PILL ===== */
+        .v-pill { display: inline-flex; align-items: center; gap: 7px; background: var(--verify-bg); color: var(--verify); border: 1px solid #BFE3D0; border-radius: 999px; padding: 4px 12px; font-size: 12.5px; font-weight: 600; }
+        .v-pill svg { flex-shrink: 0; }
+
+        /* ===== NAV ===== */
+        nav { position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(247,249,251,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+        .nav-inner { max-width: 1140px; margin: 0 auto; padding: 15px 22px; display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 9px; }
+        .logo-mark { width: 26px; height: 26px; background: var(--ink); border-radius: 6px; display: grid; place-items: center; color: #fff; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 600; }
+        .nav-links { display: flex; gap: 30px; list-style: none; align-items: center; }
+        .nav-links a { color: var(--text-2); text-decoration: none; font-size: 14.5px; font-weight: 500; }
+        .nav-links a:hover { color: var(--ink); }
+        .nav-cta { background: var(--navy-cta); color: #fff; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px; transition: background 0.2s; }
+        .nav-cta:hover { background: var(--ink); }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 6px; }
+        .hamburger span { width: 24px; height: 2px; background: var(--ink); transition: 0.3s; }
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+        .mobile-menu { position: fixed; inset: 0; background: var(--paper); z-index: 999; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 34px; transform: translateX(100%); transition: transform 0.35s cubic-bezier(0.16,1,0.3,1); }
+        .mobile-menu.active { transform: translateX(0); }
+        .mobile-menu a { color: var(--ink); text-decoration: none; font-size: 26px; font-weight: 600; font-family: 'Sora', sans-serif; }
+
+        /* ===== HERO ===== */
+        .hero { padding: 158px 0 80px; }
+        .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: start; }
+        .hero h1 { font-size: clamp(34px, 4.6vw, 54px); font-weight: 700; margin: 14px 0 20px; }
+        .hero h1 em { font-style: normal; color: var(--navy-cta); }
+        .hero p.sub { font-size: 17.5px; color: var(--text-2); max-width: 520px; margin-bottom: 30px; }
+        .btn-row { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 30px; }
+        .btn-primary { background: var(--navy-cta); color: #fff; padding: 15px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15.5px; transition: background 0.2s, transform 0.2s; border: none; cursor: pointer; font-family: inherit; }
+        .btn-primary:hover { background: var(--ink); transform: translateY(-1px); }
+        .btn-ghost { background: #fff; color: var(--ink); padding: 15px 28px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15.5px; border: 1px solid var(--line); transition: border-color 0.2s; }
+        .btn-ghost:hover { border-color: var(--navy-cta); color: var(--navy-cta); }
+        .hero-assure { display: flex; gap: 22px; flex-wrap: wrap; font-size: 13.5px; color: var(--text-2); }
+        .hero-assure span { display: flex; align-items: center; gap: 7px; }
+        .hero-assure svg { color: var(--verify); }
+
+        /* ===== SIGNATURE: THE LEDGER CARD ===== */
+        .ledger { background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 24px 60px -30px rgba(10,27,46,0.25); overflow: hidden; }
+        .ledger-head { padding: 18px 22px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .ledger-head .title { font-family: 'Sora', sans-serif; font-weight: 600; font-size: 15px; color: var(--ink); }
+        .ledger-stats { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--line); }
+        .ledger-stat { padding: 16px 20px; border-right: 1px solid var(--line); }
+        .ledger-stat:last-child { border-right: none; }
+        .ledger-stat .val { font-family: 'IBM Plex Mono', monospace; font-size: 21px; font-weight: 600; color: var(--ink); }
+        .ledger-stat .lbl { font-size: 11.5px; color: var(--text-3); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+        .ledger table { width: 100%; border-collapse: collapse; font-family: 'IBM Plex Mono', monospace; font-size: 13px; }
+        .ledger th { text-align: right; padding: 10px 14px; font-weight: 600; font-size: 11px; color: var(--text-3); text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--line); }
+        .ledger th:first-child, .ledger td:first-child { text-align: left; padding-left: 22px; color: var(--text-2); }
+        .ledger td { text-align: right; padding: 9px 14px; border-bottom: 1px solid #EEF2F6; }
+        .ledger td:last-child, .ledger th:last-child { padding-right: 22px; }
+        .pos { color: var(--verify); font-weight: 500; }
+        .neg { color: var(--loss); font-weight: 500; }
+        .ledger-foot { padding: 14px 22px; font-size: 12px; color: var(--text-3); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+        .ledger-foot a { color: var(--navy-cta); font-weight: 600; text-decoration: none; }
+        .ledger-foot a:hover { text-decoration: underline; }
+
+        /* ===== TRUST BAR ===== */
+        .trust-bar { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: #fff; padding: 26px 0; }
+        .trust-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+        .trust-item { display: flex; gap: 13px; align-items: flex-start; }
+        .trust-item svg { flex-shrink: 0; color: var(--navy-cta); margin-top: 2px; }
+        .trust-item strong { display: block; font-size: 14.5px; color: var(--ink); font-weight: 600; }
+        .trust-item span { font-size: 13px; color: var(--text-2); }
+
+        /* ===== DISCLOSURE / STRATEGY ===== */
+        .disc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .disc-card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 28px; }
+        .disc-card h3 { margin-bottom: 10px; }
+        .disc-card p { font-size: 14.5px; color: var(--text-2); }
+        .disc-card .tag { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--navy-cta); display: block; margin-bottom: 14px; }
+        .never-list { background: var(--ink); border-radius: 14px; padding: 40px; margin-top: 22px; display: grid; grid-template-columns: 1fr 2fr; gap: 36px; align-items: center; }
+        .never-list h3 { color: #fff; font-size: 22px; }
+        .never-list p.small { color: #9FB2C6; font-size: 14px; margin-top: 8px; }
+        .never-items { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+        .never-item { display: flex; gap: 10px; align-items: center; color: #E8EEF5; font-size: 14.5px; font-weight: 500; }
+        .never-item svg { color: #FF8A80; flex-shrink: 0; }
+
+        /* ===== METHODOLOGY ===== */
+        .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 54px; align-items: center; }
+        .spec-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; font-size: 14px; }
+        .spec-table td { padding: 13px 18px; border-bottom: 1px solid #EEF2F6; }
+        .spec-table tr:last-child td { border-bottom: none; }
+        .spec-table td:first-child { color: var(--text-2); width: 46%; }
+        .spec-table td:last-child { font-family: 'IBM Plex Mono', monospace; font-weight: 500; color: var(--ink); }
+        .check-line { display: flex; gap: 12px; margin-bottom: 20px; align-items: flex-start; }
+        .check-line svg { color: var(--verify); flex-shrink: 0; margin-top: 3px; }
+        .check-line strong { color: var(--ink); }
+        .check-line p { font-size: 15px; color: var(--text-2); }
+
+        /* ===== PROP FIRM ===== */
+        .prop-band { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+        .prop-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 10px; }
+        .prop-card { border: 1px solid var(--line); border-radius: 10px; padding: 20px; background: var(--paper); }
+        .prop-card .mono { font-size: 12px; color: var(--text-3); text-transform: uppercase; letter-spacing: 1px; }
+        .prop-card .big { font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 600; color: var(--ink); margin: 6px 0 4px; }
+        .prop-card .ok { color: var(--verify); font-size: 13px; font-weight: 600; }
+
+        /* ===== PRICING ===== */
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: stretch; }
+        .price-card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 34px; position: relative; display: flex; flex-direction: column; }
+        .price-card.featured { border: 2px solid var(--navy-cta); box-shadow: 0 20px 50px -25px rgba(16,64,110,0.35); }
+        .badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--navy-cta); color: #fff; padding: 4px 15px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; white-space: nowrap; }
+        .price-tier { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-3); margin-bottom: 12px; }
+        .price-amount { font-family: 'Sora', sans-serif; font-size: 42px; font-weight: 700; color: var(--ink); }
+        .price-amount small { font-size: 15px; font-weight: 500; color: var(--text-3); font-family: 'IBM Plex Sans', sans-serif; }
+        .price-desc { font-size: 13.5px; color: var(--text-2); margin: 8px 0 24px; padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+        .price-features { list-style: none; margin-bottom: 28px; flex: 1; }
+        .price-features li { display: flex; gap: 10px; font-size: 14.5px; margin-bottom: 13px; color: var(--text); align-items: flex-start; }
+        .price-features svg { color: var(--verify); flex-shrink: 0; margin-top: 3px; }
+        .price-cta { display: block; text-align: center; padding: 14px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px; cursor: pointer; border: none; font-family: inherit; width: 100%; transition: 0.2s; }
+        .price-cta.primary { background: var(--navy-cta); color: #fff; }
+        .price-cta.primary:hover { background: var(--ink); }
+        .price-cta.secondary { background: #fff; color: var(--ink); border: 1px solid var(--line); }
+        .price-cta.secondary:hover { border-color: var(--navy-cta); color: var(--navy-cta); }
+        .guarantee-strip { margin-top: 28px; background: var(--verify-bg); border: 1px solid #BFE3D0; border-radius: 12px; padding: 20px 26px; display: flex; gap: 16px; align-items: center; }
+        .guarantee-strip svg { color: var(--verify); flex-shrink: 0; }
+        .guarantee-strip strong { color: var(--ink); }
+        .guarantee-strip p { font-size: 14px; color: var(--text-2); }
+
+        /* ===== FAQ ===== */
+        .faq-list { max-width: 780px; }
+        .faq-item { background: #fff; border: 1px solid var(--line); border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+        .faq-q { width: 100%; text-align: left; background: none; border: none; padding: 19px 22px; font-family: 'IBM Plex Sans', sans-serif; font-size: 15.5px; font-weight: 600; color: var(--ink); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .faq-q::after { content: '+'; font-family: 'IBM Plex Mono', monospace; font-size: 19px; color: var(--text-3); transition: transform 0.25s; }
+        .faq-item.open .faq-q::after { transform: rotate(45deg); }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .faq-a p { padding: 0 22px 20px; font-size: 14.5px; color: var(--text-2); }
+
+        /* ===== RISK ===== */
+        .risk-box { background: var(--risk-bg); border: 1px solid #E8D5A8; border-radius: 12px; padding: 28px 32px; }
+        .risk-box h3 { color: var(--risk-amber); margin-bottom: 10px; display: flex; gap: 10px; align-items: center; }
+        .risk-box p { font-size: 13.5px; color: #6B5A32; line-height: 1.7; }
+
+        /* ===== MODAL ===== */
+        .modal-overlay { position: fixed; inset: 0; background: rgba(10,27,46,0.55); backdrop-filter: blur(6px); display: none; justify-content: center; align-items: center; z-index: 2000; opacity: 0; transition: opacity 0.25s; padding: 20px; }
+        .modal-overlay.active { display: flex; opacity: 1; }
+        .modal-content { background: #fff; border-radius: 14px; padding: 36px; max-width: 460px; width: 100%; position: relative; transform: scale(0.96); transition: transform 0.25s; }
+        .modal-overlay.active .modal-content { transform: scale(1); }
+        .modal-content h3 { margin-bottom: 6px; }
+        .modal-content .sub { font-size: 14px; color: var(--text-2); margin-bottom: 22px; }
+        .modal-product { background: var(--paper); border: 1px solid var(--line); padding: 15px 18px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; font-weight: 600; }
+        .modal-product span:last-child { font-family: 'IBM Plex Mono', monospace; color: var(--navy-cta); }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-size: 13px; color: var(--text-2); margin-bottom: 6px; font-weight: 500; }
+        .form-group input { width: 100%; padding: 13px 14px; border: 1px solid var(--line); border-radius: 8px; font-family: inherit; font-size: 15px; color: var(--text); background: #fff; }
+        .form-group input:focus { outline: none; border-color: var(--navy-cta); box-shadow: 0 0 0 3px rgba(16,64,110,0.12); }
+        .close-modal { position: absolute; top: 16px; right: 18px; background: none; border: none; font-size: 22px; color: var(--text-3); cursor: pointer; }
+        .modal-note { font-size: 12px; color: var(--text-3); text-align: center; margin-top: 14px; }
+
+        /* ===== FOOTER ===== */
+        footer { background: var(--ink); color: #B9C7D6; padding: 70px 0 36px; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+        footer .logo { color: #fff; margin-bottom: 16px; }
+        footer .logo-mark { background: #fff; color: var(--ink); }
+        .footer-brand p { font-size: 13.5px; max-width: 300px; }
+        .footer-col h4 { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #fff; margin-bottom: 18px; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 10px; }
+        .footer-col a { color: #B9C7D6; text-decoration: none; font-size: 14px; }
+        .footer-col a:hover { color: #fff; }
+        .footer-risk { border-top: 1px solid rgba(255,255,255,0.12); padding-top: 26px; }
+        .footer-risk p { font-size: 11.5px; color: #7E93A9; line-height: 1.7; margin-bottom: 14px; }
+        .footer-bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: 12.5px; color: #7E93A9; }
+
+        .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.16,1,0.3,1); }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        @media (max-width: 980px) {
+            .hero { padding-top: 130px; }
+            .hero-grid, .method-grid, .never-list { grid-template-columns: 1fr; }
+            .trust-inner, .prop-grid { grid-template-columns: repeat(2, 1fr); }
+            .disc-grid, .pricing-grid, .footer-grid { grid-template-columns: 1fr; }
+            .nav-links, .nav-cta { display: none; }
+            .hamburger { display: flex; }
+            section { padding: 64px 0; }
+            .never-items { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 560px) {
+            .trust-inner, .prop-grid { grid-template-columns: 1fr; }
+            .ledger-stats { grid-template-columns: repeat(3, 1fr); }
+            .ledger-stat { padding: 12px 12px; }
+            .ledger-stat .val { font-size: 16px; }
+            .ledger th, .ledger td { padding: 8px 8px; font-size: 11.5px; }
+        }
+    </style>
+</head>
+<body>
+    <nav aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#" class="logo"><span class="logo-mark">Æ</span>Apex EA Pro</a>
+            <ul class="nav-links">
+                <li><a href="#results">Verified Results</a></li>
+                <li><a href="#strategy">How It Trades</a></li>
+                <li><a href="#methodology">Testing</a></li>
+                <li><a href="#prop">Prop Firms</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#pricing" class="nav-cta">See Pricing</a>
+            <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#results" onclick="toggleMenu()">Verified Results</a>
+        <a href="#strategy" onclick="toggleMenu()">How It Trades</a>
+        <a href="#methodology" onclick="toggleMenu()">Testing</a>
+        <a href="#prop" onclick="toggleMenu()">Prop Firms</a>
+        <a href="#pricing" onclick="toggleMenu()">Pricing</a>
+    </div>
+
+    <main>
+    <!-- ================= HERO ================= -->
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="v-pill"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Live account verified on Myfxbook since March 2021</span>
+                <h1>The forex EA that publishes its <em>losing months</em>, too.</h1>
+                <p class="sub">Apex EA Pro is an automated expert advisor for MT4 and MT5. Fixed 0.5% risk per trade, a hard stop loss on every order, and 51 consecutive months of real-money results published in full — the red months next to the green ones. That's how you know the numbers are real.</p>
+                <div class="btn-row">
+                    <a href="#pricing" class="btn-primary">Get Apex EA Pro</a>
+                    <a href="#results" class="btn-ghost">Inspect the Track Record</a>
+                </div>
+                <div class="hero-assure">
+                    <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>30-day money-back guarantee</span>
+                    <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>No martingale · No grid</span>
+                    <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Works on any MT4/MT5 broker</span>
+                </div>
+            </div>
+
+            <!-- SIGNATURE ELEMENT: the audit ledger -->
+            <aside class="ledger" aria-label="Verified monthly performance ledger">
+                <div class="ledger-head">
+                    <span class="title">Live Account · Performance Ledger</span>
+                    <span class="v-pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Track record verified</span>
+                </div>
+                <div class="ledger-stats">
+                    <div class="ledger-stat"><div class="val">+2.8%</div><div class="lbl">Avg / Month</div></div>
+                    <div class="ledger-stat"><div class="val">9.8%</div><div class="lbl">Max Drawdown</div></div>
+                    <div class="ledger-stat"><div class="val">1.74</div><div class="lbl">Profit Factor</div></div>
+                </div>
+                <table>
+                    <thead><tr><th scope="col">2025</th><th scope="col">Return</th><th scope="col">Trades</th><th scope="col">DD</th></tr></thead>
+                    <tbody>
+                        <tr><td>December</td><td class="pos">+3.4%</td><td>41</td><td>2.1%</td></tr>
+                        <tr><td>November</td><td class="pos">+2.2%</td><td>38</td><td>3.0%</td></tr>
+                        <tr><td>October</td><td class="neg">−1.8%</td><td>44</td><td>4.6%</td></tr>
+                        <tr><td>September</td><td class="pos">+4.1%</td><td>36</td><td>1.8%</td></tr>
+                        <tr><td>August</td><td class="pos">+1.6%</td><td>29</td><td>2.4%</td></tr>
+                        <tr><td>July</td><td class="neg">−0.7%</td><td>33</td><td>3.9%</td></tr>
+                        <tr><td>June</td><td class="pos">+5.0%</td><td>47</td><td>2.2%</td></tr>
+                    </tbody>
+                </table>
+                <div class="ledger-foot">
+                    <span>Real ECN account · 1:30 leverage · updated automatically</span>
+                    <a href="#results">Full 51-month history →</a>
+                </div>
+            </aside>
+        </div>
+    </header>
+
+    <!-- ================= TRUST BAR ================= -->
+    <div class="trust-bar">
+        <div class="container trust-inner">
+            <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div><strong>Independently verifiable</strong><span>Public Myfxbook link — trading privileges &amp; track record both verified.</span></div>
+            </div>
+            <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 3 5-8"/></svg>
+                <div><strong>4.5 years of live data</strong><span>Not a backtest screenshot. A real account trading real money since 2021.</span></div>
+            </div>
+            <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+                <div><strong>30-day full refund</strong><span>Unconditional. Email support with your order ID — no forms, no fights.</span></div>
+            </div>
+            <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                <div><strong>Human support, 7 days</strong><span>Setup help over email or live chat. Median first reply: under 4 hours.</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= STRATEGY DISCLOSURE ================= -->
+    <section id="strategy" aria-labelledby="strategy-h">
+        <div class="container">
+            <span class="eyebrow">Full Strategy Disclosure</span>
+            <h2 id="strategy-h">Know exactly what you're running before you run it</h2>
+            <p class="lede">Most forex robots hide their logic behind buzzwords. Apex EA Pro documents it, because an EA you don't understand is an EA you'll switch off at the worst moment.</p>
+            <div class="disc-grid reveal">
+                <article class="disc-card">
+                    <span class="tag">01 · Entry Logic</span>
+                    <h3>Session-based mean reversion</h3>
+                    <p>The EA trades the London and New York sessions only. It waits for price to sweep liquidity beyond a prior session extreme on EURUSD, GBPUSD, USDJPY or XAUUSD, confirms rejection on the M15 close, then enters with a resting limit order — never chasing market price.</p>
+                </article>
+                <article class="disc-card">
+                    <span class="tag">02 · Risk Per Trade</span>
+                    <h3>Fixed fractional, hard stops</h3>
+                    <p>Every position risks a fixed fraction of current equity — 0.5% by default, capped at 1%. The stop loss is placed with the entry order at the broker, not managed "virtually" in the terminal. If your VPS dies mid-trade, your stop still exists.</p>
+                </article>
+                <article class="disc-card">
+                    <span class="tag">03 · Exit &amp; Filters</span>
+                    <h3>Structured exits, news-aware</h3>
+                    <p>Targets are set at 1.5–2.5R based on measured volatility (ATR). A built-in economic calendar filter flattens or blocks entries around high-impact releases like NFP, CPI and rate decisions. Prop Mode closes everything before Friday's session end.</p>
+                </article>
+            </div>
+
+            <div class="never-list reveal">
+                <div>
+                    <h3>What Apex EA Pro will never do</h3>
+                    <p class="small">These are the techniques that make an equity curve look perfect until the account is gone. They're excluded at the code level — not just "turned off."</p>
+                </div>
+                <div class="never-items">
+                    <div class="never-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>Martingale lot-sizing after losses</div>
+                    <div class="never-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>Grid / averaging into drawdown</div>
+                    <div class="never-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>Trading without a stop loss</div>
+                    <div class="never-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>Hidden or "virtual-only" stops</div>
+                    <div class="never-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>Latency / broker arbitrage tricks</div>
+                    <div class="never-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>Promises of guaranteed returns</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= RESULTS / METHODOLOGY ================= -->
+    <section id="results" aria-labelledby="results-h" style="background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+        <div class="container">
+            <span class="eyebrow">Verified Results &amp; Testing Methodology</span>
+            <h2 id="results-h">How we test — and how you can check us</h2>
+            <p class="lede">A backtest is only as honest as its assumptions. Ours are documented below, and the live account exists so you never have to take the backtest's word for it.</p>
+            <div class="method-grid" id="methodology">
+                <div class="reveal">
+                    <div class="check-line">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        <p><strong>99.9% modelling-quality tick data.</strong> Backtests use Dukascopy tick data with variable real spreads — not MT4's default 90% interpolated bars that make weak strategies look flawless.</p>
+                    </div>
+                    <div class="check-line">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        <p><strong>Slippage and commission modelled.</strong> Every simulated fill includes 0.3 pips average slippage and $7/lot round-turn commission — the same costs you'll pay on a real ECN account.</p>
+                    </div>
+                    <div class="check-line">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        <p><strong>Out-of-sample validation.</strong> Parameters were optimized on 2015–2019 data only, then locked. Everything from 2020 onward — including the entire live period — is out-of-sample.</p>
+                    </div>
+                    <div class="check-line">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                        <p><strong>Live-to-backtest tracking error published.</strong> The live account has tracked the backtest within ±0.4% per month. If those ever diverge materially, we say so in the changelog — publicly.</p>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <table class="spec-table" aria-label="Live account specification">
+                        <tbody>
+                            <tr><td>Tracking since</td><td>March 2021 (51 months)</td></tr>
+                            <tr><td>Account type</td><td>Real · ECN · 1:30 leverage</td></tr>
+                            <tr><td>Average monthly return</td><td>+2.8%</td></tr>
+                            <tr><td>Worst month</td><td>−3.2% (Sep 2022)</td></tr>
+                            <tr><td>Maximum drawdown</td><td>9.8%</td></tr>
+                            <tr><td>Win rate / Profit factor</td><td>61% / 1.74</td></tr>
+                            <tr><td>Average trade duration</td><td>6.4 hours</td></tr>
+                            <tr><td>Instruments</td><td>EURUSD · GBPUSD · USDJPY · XAUUSD</td></tr>
+                            <tr><td>Verification</td><td>Myfxbook — public link in your receipt</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROP FIRMS ================= -->
+    <section id="prop" aria-labelledby="prop-h">
+        <div class="container">
+            <span class="eyebrow">Prop Firm Compatibility</span>
+            <h2 id="prop-h">Built to survive FTMO-style rules</h2>
+            <p class="lede">Prop Mode enforces the constraints funded-account traders actually get judged on. Confirm your firm's current rulebook — they change — but these defaults were designed around the common 5%/10% framework.</p>
+            <div class="prop-grid reveal">
+                <div class="prop-card"><span class="mono">Daily drawdown</span><div class="big">≤ 2.5%</div><span class="ok">✓ Hard equity guard, under the typical 5% limit</span></div>
+                <div class="prop-card"><span class="mono">Total drawdown</span><div class="big">≤ 6%</div><span class="ok">✓ EA halts trading, under the typical 10% limit</span></div>
+                <div class="prop-card"><span class="mono">Weekend exposure</span><div class="big">Zero</div><span class="ok">✓ Prop Mode flattens all positions Friday</span></div>
+                <div class="prop-card"><span class="mono">Prohibited tactics</span><div class="big">None</div><span class="ok">✓ No martingale, grid, HFT or arbitrage</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PRICING ================= -->
+    <section id="pricing" aria-labelledby="pricing-h" style="background:#fff; border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+        <div class="container">
+            <span class="eyebrow">Pricing — One Payment, No Subscription</span>
+            <h2 id="pricing-h">Every license includes the full EA. No feature hostages.</h2>
+            <p class="lede">The tiers differ only in account count and support depth. The trading logic, the set files, and the updates are identical in all three.</p>
+            <div class="pricing-grid">
+                <div class="price-card reveal">
+                    <div class="price-tier">Single</div>
+                    <div class="price-amount">$349 <small>one-time</small></div>
+                    <p class="price-desc">For one live account. Everything you need to run Apex properly.</p>
+                    <ul class="price-features">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>1 live + unlimited demo accounts</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>MT4 &amp; MT5 versions included</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Optimized set files for 4 pairs</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Lifetime updates</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Email support, 7 days a week</li>
+                    </ul>
+                    <button class="price-cta secondary" onclick="openModal('Single License','$349')">Choose Single</button>
+                </div>
+                <div class="price-card featured reveal">
+                    <span class="badge">Most Chosen</span>
+                    <div class="price-tier">Pro</div>
+                    <div class="price-amount">$549 <small>one-time</small></div>
+                    <p class="price-desc">For traders running a personal account plus a prop challenge.</p>
+                    <ul class="price-features">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>3 live + unlimited demo accounts</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Everything in Single</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Prop Mode preset pack (FTMO-style rules)</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>1-on-1 setup call (30 min)</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Priority support queue</li>
+                    </ul>
+                    <button class="price-cta primary" onclick="openModal('Pro License','$549')">Choose Pro</button>
+                </div>
+                <div class="price-card reveal">
+                    <div class="price-tier">Fund</div>
+                    <div class="price-amount">$1,190 <small>one-time</small></div>
+                    <p class="price-desc">For managers running Apex across multiple client or fund accounts.</p>
+                    <ul class="price-features">
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>10 live accounts</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Everything in Pro</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Multi-account risk dashboard</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Direct line to the developer</li>
+                        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Custom set-file consultation</li>
+                    </ul>
+                    <button class="price-cta secondary" onclick="openModal('Fund License','$1,190')">Choose Fund</button>
+                </div>
+            </div>
+            <div class="guarantee-strip reveal">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                <p><strong>30-day money-back guarantee, no conditions.</strong> If Apex doesn't run as documented on your broker — or you simply change your mind — email support@apexeapro.com with your order ID and the full amount is refunded. No performance requirements, no exit interview.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq" aria-labelledby="faq-h">
+        <div class="container">
+            <span class="eyebrow">Questions Skeptics Ask</span>
+            <h2 id="faq-h">Frequently asked questions</h2>
+            <p class="lede">If you're skeptical of forex EAs, good — you should be. These are the questions we'd ask before buying, answered straight.</p>
+            <div class="faq-list">
+                <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Does Apex EA Pro use martingale or grid strategies?</button><div class="faq-a"><p>No — and this is verifiable in the trade history, not just claimed. It never averages into losing positions, never increases lot size after a loss, and never opens grids. Every trade risks a fixed 0.5% of equity (max 1%) with a hard stop loss registered at the broker at entry.</p></div></div>
+                <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Can I verify the results before I pay anything?</button><div class="faq-a"><p>Yes. The live real-money account is tracked on Myfxbook with both trading privileges and track record verified — meaning Myfxbook has read-only investor access and confirms the history hasn't been edited. The link is public and updates automatically. Never trust an EA whose only proof is a screenshot.</p></div></div>
+                <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Is it compatible with prop firms like FTMO, FundedNext or The5ers?</button><div class="faq-a"><p>Prop Mode was built for the standard 5% daily / 10% total drawdown framework: the equity guard halts trading at 2.5% daily loss, positions close before the weekend, and no prohibited techniques (martingale, grid, latency arbitrage, HFT) are used. Firms update their rules regularly, so always confirm your specific firm's current terms — we keep a compatibility notes page updated too.</p></div></div>
+                <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">What returns should I realistically expect?</button><div class="faq-a"><p>The live account has averaged +2.8% per month over 51 months, with a worst month of −3.2% and a max drawdown of 9.8%. Roughly one month in five is negative. If another vendor promises you fixed 10–30% monthly returns, they are describing either a martingale time bomb or a fiction. Past performance never guarantees future results.</p></div></div>
+                <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Which brokers, pairs and account sizes work?</button><div class="faq-a"><p>Any MT4/MT5 broker; ECN/raw-spread accounts with under 1 pip on majors perform best. Optimized set files ship for EURUSD, GBPUSD, USDJPY and XAUUSD. Minimum recommended balance is $500 (or cent-account equivalent) so the 0.5% risk sizing can round to valid lot sizes.</p></div></div>
+                <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Do I need a VPS? What about setup help?</button><div class="faq-a"><p>A VPS is recommended (any $5–10/month Windows VPS near your broker's server works) since the EA trades London and New York sessions. Setup takes about 15 minutes with the included guide; if you get stuck, support will walk you through it — Pro and Fund licenses include a live setup call.</p></div></div>
+                <div class="faq-item"><button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">How does the refund actually work?</button><div class="faq-a"><p>Email support@apexeapro.com within 30 days of purchase with your order ID. That's the whole process. Refunds are issued to the original payment method within 5 business days. You don't need to show trading results or explain yourself.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= RISK DISCLOSURE ================= -->
+    <section aria-label="Risk disclosure" style="padding-top:0;">
+        <div class="container">
+            <div class="risk-box reveal">
+                <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>Risk disclosure — read this before buying</h3>
+                <p>Trading foreign exchange and CFDs on margin carries a high level of risk and may not be suitable for all investors. You could lose some or all of your invested capital; do not trade money you cannot afford to lose. The performance figures on this page are from a specific live account under specific conditions — your broker's spreads, slippage, and execution will differ, and past performance is not indicative of future results. Apex EA Pro is a software tool, not financial advice, and Apex Quant Systems Ltd. is not a registered investment advisor. Seek independent advice if necessary.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo"><span class="logo-mark">Æ</span>Apex EA Pro</a>
+                    <p>Automated forex trading for people who read the fine print. Built and maintained by Apex Quant Systems Ltd. since 2021.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#results">Verified results</a></li>
+                        <li><a href="#strategy">Strategy disclosure</a></li>
+                        <li><a href="#prop">Prop firm mode</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Setup guide</a></li>
+                        <li><a href="#">Changelog</a></li>
+                        <li><a href="#">Broker compatibility notes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="mailto:support@apexeapro.com">support@apexeapro.com</a></li>
+                        <li><a href="#">Refund policy</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-risk">
+                <p><strong style="color:#B9C7D6">Risk warning:</strong> Trading forex and CFDs on margin carries a high level of risk and may not be suitable for all investors. The high degree of leverage can work against you as well as for you. Before deciding to trade, carefully consider your investment objectives, experience level, and risk appetite. You could sustain a loss of some or all of your initial investment. Past performance of Apex EA Pro, whether live or backtested, is not indicative of future results. Apex Quant Systems Ltd. provides software only and does not provide investment, legal, or tax advice.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Apex Quant Systems Ltd. All rights reserved.</p>
+                <p>MetaTrader is a trademark of MetaQuotes Ltd. Apex EA Pro is not affiliated with MetaQuotes or any prop firm.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= CHECKOUT MODAL ================= -->
+    <div class="modal-overlay" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Close checkout" onclick="closeModal()">×</button>
+            <h3 id="modalTitle">Secure checkout</h3>
+            <p class="sub">Instant delivery by email. Covered by the 30-day money-back guarantee.</p>
+            <div class="modal-product">
+                <span id="modalProduct">Pro License</span>
+                <span id="modalPrice">$549</span>
+            </div>
+            <div class="form-group">
+                <label for="buyerName">Full name</label>
+                <input type="text" id="buyerName" autocomplete="name" placeholder="Your name">
+            </div>
+            <div class="form-group">
+                <label for="buyerEmail">Email — your license key is sent here</label>
+                <input type="email" id="buyerEmail" autocomplete="email" placeholder="you@example.com">
+            </div>
+            <button class="price-cta primary" onclick="submitCheckout()">Continue to payment</button>
+            <p class="modal-note">🔒 Payments processed securely. We never see or store card details.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('active');
+        }
+        function toggleFaq(btn) {
+            const item = btn.parentElement;
+            const answer = item.querySelector('.faq-a');
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(o => {
+                o.classList.remove('open');
+                o.querySelector('.faq-a').style.maxHeight = null;
+                o.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+            });
+            if (!isOpen) {
+                item.classList.add('open');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        }
+        function openModal(product, price) {
+            document.getElementById('modalProduct').textContent = product;
+            document.getElementById('modalPrice').textContent = price;
+            document.getElementById('checkoutModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal() {
+            document.getElementById('checkoutModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.getElementById('checkoutModal').addEventListener('click', e => { if (e.target.id === 'checkoutModal') closeModal(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+        function submitCheckout() {
+            const name = document.getElementById('buyerName').value.trim();
+            const email = document.getElementById('buyerEmail').value.trim();
+            if (!name || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+                alert('Enter your name and a valid email so we can deliver your license.');
+                return;
+            }
+            // TODO: replace with real payment gateway redirect (Stripe / Paddle / etc.)
+            alert('Demo checkout — connect your payment gateway here.');
+            closeModal();
+        }
+        // Scroll reveal (respects prefers-reduced-motion via CSS)
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
+</body>
+</html>
