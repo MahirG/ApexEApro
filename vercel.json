@@ -1,5 +1,10 @@
 {
   "rewrites": [
+    { "source": "/auth", "destination": "/auth.html" },
+    { "source": "/auth/callback", "destination": "/auth.html" },
+    { "source": "/auth/reset", "destination": "/auth.html" },
+    { "source": "/account", "destination": "/auth.html" },
+    { "source": "/home", "destination": "/index.html" },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
